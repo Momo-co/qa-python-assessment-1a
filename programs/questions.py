@@ -127,7 +127,24 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    pass
+    numberList = arg1.split()
+    sumList = []
+    size = len(numberList)
+
+    for x in range(size):
+        sum = 0
+        for y in numberList[x]:
+            sum = sum + int(y)
+        sumList.append(sum)
+
+    length = len(sumList)
+    biggestSum = sumList[0]
+
+    for z in range(length):
+        if sumList[z] > biggestSum:
+            biggestSum = sumList[z]
+
+    return biggestSum
 
 
     # <QUESTION 5>
