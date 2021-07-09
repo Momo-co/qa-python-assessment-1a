@@ -231,7 +231,16 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
+    list = []
+
+    for x in range(input):
+        list.append(x)
+        
+    multiply = 1
+    for y in list:
+        multiply = multiply * (input - y)
+    
+    return multiply
 
 
     # <QUESTION 9>
