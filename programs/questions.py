@@ -270,7 +270,21 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-    pass
+    inputList = []
+
+    for x in inputString:
+        if x != " ":
+            inputList.append(x)
+    
+    size = len(inputList)
+    position = -1
+    for y in range(size):
+        if inputList[y] == char:
+            # y + 1 since index of list starts with zero
+            position = y + 1
+            break
+
+    return position
 
 
     # <QUESTION 10>
