@@ -212,7 +212,15 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+    words = input.lower()
+    vowels = "aeiou"
+    totalVowels = 0
+    for x in words:
+        for y in vowels:
+            if x == y:
+                totalVowels = totalVowels + 1
+
+    return totalVowels
 
 
     # <QUESTION 8>
